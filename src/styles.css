@@ -1,0 +1,52 @@
+.test {
+    color: green;
+    margin-bottom: 40px
+}
+
+.test1 {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0
+}
+
+.test2 {
+    font-size: 12px;
+    font-style: italic
+}
+
+.firstline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    color: red;
+    margin: 10px 40px 20px 40px
+}
+
+.logo {
+    border: 1px black solid
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    border: 1px black solid
+}
+
+.link1, .link2 {
+    padding: 0 5px;
+    border: 1px blue solid
+}
+.link1 {
+    margin-right: 10px;
+}
+.link2 {
+    margin-left: 10px;
+}
+
+.tag {
+    background: goldenrod
+}
