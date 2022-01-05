@@ -1,3 +1,67 @@
+/* Règles pour le composant "Layout". */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1240px;
+    height: 68px;
+    margin: 20px 40px
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    font-size: 24px
+}
+
+.link_accueil, .link_apropos {
+    color: #FF6060;
+    padding: 0 5px
+}
+.link_accueil {
+    margin-right: 30px;
+}
+.link_apropos {
+    margin-left: 30px;
+}
+
+.footer {
+    background: grey;
+    font-weight: bold
+}
+
+/* Règles pour le composant "Home". */
+.banner_Img {
+    position: relative;
+    left: 40px;
+    top: -10px;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    /*margin: -200px 40px 0 40px*/
+}
+
+.banner_Bgr {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 1240px;
+    height: 223px;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    margin: 0 40px
+}
+
+/* Règles pour d'autres composants. */
+.tag {
+    background: goldenrod
+}
+
+/* Règles de test à supprimer plus tard. */
 .test {
     color: green;
     margin-bottom: 40px
@@ -13,40 +77,4 @@
 .test2 {
     font-size: 12px;
     font-style: italic
-}
-
-.firstline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 30px;
-    color: red;
-    margin: 10px 40px 20px 40px
-}
-
-.logo {
-    border: 1px black solid
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 30px;
-    border: 1px black solid
-}
-
-.link1, .link2 {
-    padding: 0 5px;
-    border: 1px blue solid
-}
-.link1 {
-    margin-right: 10px;
-}
-.link2 {
-    margin-left: 10px;
-}
-
-.tag {
-    background: goldenrod
 }
