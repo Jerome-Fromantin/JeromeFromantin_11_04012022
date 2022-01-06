@@ -9,6 +9,8 @@ Travail réalisé :
 - Premier upload des fichiers de base.
 - Ajout en local de React Router et d'autres éléments (composants, images, règles CSS...).
 - Création de ce fichier Readme.
+- Mise en place du layout (éléments présents sur toutes les pages).
+- Mise en place partielle des composants de la page d'accueil (desktop et mobile).
 - Mise à jour du repository.
 
 Travail à faire :
