@@ -6,9 +6,13 @@ import Footer from '../composants/Footer'
 class Layout extends React.Component {
     render() {
         return (<div>
-            <Header/>
-            <Outlet/>
-            <Footer/>
+            <div className="layout_Main">
+                <Header/>
+                <Outlet/>
+            </div>
+            <div className="layout_Footer">
+                <Footer/>
+            </div>
         </div>)
     }
 }
