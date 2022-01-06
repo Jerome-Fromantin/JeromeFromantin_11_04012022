@@ -16,7 +16,7 @@ class App extends React.Component {
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>}/>
             <Route path="apropos" element={<Apropos/>}/>
-            <Route path="logement" element={<Logement/>}/>
+            <Route path="l" element={<Logement/>}/>{/* Remettre "logement" à la place de "l". */}
             <Route path="*" element={<Page404/>}/>
           </Route>
         </Routes>
