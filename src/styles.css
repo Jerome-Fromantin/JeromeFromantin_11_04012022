@@ -1,11 +1,29 @@
 /* Règles pour le composant "Layout". */
+.layout_Main {
+    position: relative;
+    min-height: 100%
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1240px;
     height: 68px;
-    margin: 20px 40px
+    margin: 30px auto
+}
+
+@media (max-width: 1360px) {
+    .header {
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 145px;
+        height: 47px
+    }
 }
 
 .nav {
@@ -27,26 +45,41 @@
     margin-left: 30px;
 }
 
-.footer {
-    background: grey;
-    font-weight: bold
+@media (max-width: 375px) {
+    .link_accueil, .link_apropos {
+        color: green
+    }
+}
+
+.layout_Footer {
+    position: static;
+    bottom: 0;
+    background: black;
+    height: 209px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center
+}
+
+.footer-logo {
+    margin-top: 80px
 }
 
 /* Règles pour le composant "Home". */
 .banner_Img {
     position: relative;
     left: 40px;
-    top: -10px;
+    top: 30px;
     width: 1240px;
     height: 223px;
     border-radius: 25px;
-    /*margin: -200px 40px 0 40px*/
 }
 
 .banner_Bgr {
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 130px;
     width: 1240px;
     height: 223px;
     background: #000000;
@@ -56,6 +89,48 @@
     margin: 0 40px
 }
 
+.banner_Txt {
+    position: relative;
+    left: 350px;
+    top: -115px;
+    color: white;
+    font-size: 48px
+}
+
+.gallery {
+    background: #E5E5E5;
+    width: 1240px;
+    height: 500px;
+    border-radius: 25px;
+    margin: 0 auto 10px auto
+}
+
+@media (max-width: 1360px) {
+    .banner_Img, .banner_Bgr, .gallery {
+        width: 90%
+    }
+}
+
+.card {
+    display: inline-block;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.5) 100%), #FF6060;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    margin: 50px 10px 50px 50px
+}
+
+.card_Title {
+    display: inline-block;
+    background: transparent;
+    width: 300px;
+    height: 52px;
+    color: white;
+    font-size: 18px;
+    border-radius: 0;
+    margin: 268px 20px 20px 20px
+}
+
 /* Règles pour d'autres composants. */
 .tag {
     background: goldenrod
@@ -63,18 +138,11 @@
 
 /* Règles de test à supprimer plus tard. */
 .test {
-    color: green;
-    margin-bottom: 40px
-}
-
-.test1 {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 5px 0
+    height: 50px;
+    border: 2px green solid;
+    margin-bottom: 10px
 }
 
 .test2 {
-    font-size: 12px;
-    font-style: italic
+    border: 1px red solid
 }
