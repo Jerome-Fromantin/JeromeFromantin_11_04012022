@@ -1,5 +1,5 @@
 /* Règles pour le composant "Layout". */
-.layout_Main {
+.layout_main {
     position: relative;
     min-height: 100%
 }
@@ -11,19 +11,6 @@
     width: 1240px;
     height: 68px;
     margin: 30px auto
-}
-
-@media (max-width: 1360px) {
-    .header {
-        width: 90%
-    }
-}
-
-@media (max-width: 600px) {
-    .logo {
-        width: 145px;
-        height: 47px
-    }
 }
 
 .nav {
@@ -45,13 +32,7 @@
     margin-left: 30px;
 }
 
-@media (max-width: 375px) {
-    .link_accueil, .link_apropos {
-        color: green
-    }
-}
-
-.layout_Footer {
+.layout_footer {
     position: static;
     bottom: 0;
     background: black;
@@ -67,48 +48,46 @@
 }
 
 /* Règles pour le composant "Home". */
-.banner_Img {
-    position: relative;
-    left: 40px;
-    top: 30px;
+.banner {
+    background: url("./assets/Banner_Home.png");
     width: 1240px;
     height: 223px;
     border-radius: 25px;
+    margin: 40px auto
 }
 
-.banner_Bgr {
-    position: absolute;
+.banner_bgr, .banner_txt {
+    position: relative;
     left: 0;
-    top: 130px;
     width: 1240px;
     height: 223px;
-    background: #000000;
-    mix-blend-mode: darken;
-    opacity: 0.3;
     border-radius: 25px;
-    margin: 0 40px
+    margin: 0 auto
 }
 
-.banner_Txt {
-    position: relative;
-    left: 350px;
-    top: -115px;
+.banner_bgr {
+    top: 0;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.banner_txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -223px;
+    background: transparent;
     color: white;
-    font-size: 48px
+    font-size: 48px;
+    text-align: center
 }
 
 .gallery {
     background: #E5E5E5;
     width: 1240px;
     height: 500px;
+    text-align: center;
     border-radius: 25px;
-    margin: 0 auto 10px auto
-}
-
-@media (max-width: 1360px) {
-    .banner_Img, .banner_Bgr, .gallery {
-        width: 90%
-    }
+    margin: 0 auto 40px auto
 }
 
 .card {
@@ -117,17 +96,16 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    margin: 50px 10px 50px 50px
+    margin: 50px auto
 }
 
-.card_Title {
-    display: inline-block;
+.card_title {
     background: transparent;
     width: 300px;
     height: 52px;
     color: white;
     font-size: 18px;
-    border-radius: 0;
+    text-align: left;
     margin: 268px 20px 20px 20px
 }
 
@@ -145,4 +123,89 @@
 
 .test2 {
     border: 1px red solid
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1360px) {
+    .header, .banner, .gallery {
+        width: 90%
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner_bgr, .banner_txt {
+        width: 100%
+    }
+}
+
+@media (max-width: 720px) {
+    .banner_txt {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 145px;
+        height: 47px
+    }
+
+    .link_accueil, .link_apropos {
+        color: #FF6060;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0
+    }
+    .link_accueil {
+        margin-right: 5px;
+    }
+    .link_apropos {
+        margin-left: 5px;
+    }
+
+    .banner, .banner_bgr, .banner_txt {
+        height: 111px;
+        border-radius: 10px
+    }
+
+    .banner_txt {
+        top: -111px;
+        font-size: 24px;
+        padding-left: 16px
+    }
+
+    .gallery {
+        background: white;
+        width: 335px;
+        height: 500px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto 40px auto
+    }
+
+    .card {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+        margin: 0 auto 20px auto
+    }
+
+    .card_title {
+        margin: 188px auto 15px auto
+    }
+
+    .layout_footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .link_accueil, .link_apropos {
+        color: green
+    }
 }
