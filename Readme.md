@@ -1,6 +1,6 @@
-Ceci est la première version du fichier Readme, qui sera mise à jour à de multiples reprises.
+Ce travail est réalisé dans le cadre de la formation "Développeur JavaScript React" (anciennement "Développeur d'applications front-end") d'OpenClassrooms.
 
-Ce repository contient une application React créée avec Create React App.
+Ce projet 11 consiste en la création et le développement d'une application React utilisant React Router.
 
 Travail réalisé :
 - Initialisation du projet.
@@ -10,8 +10,7 @@ Travail réalisé :
 - Ajout en local de React Router et d'autres éléments (composants, images, règles CSS...).
 - Création de ce fichier Readme.
 - Mise en place du layout (éléments présents sur toutes les pages).
-- Mise en place partielle des composants de la page d'accueil (desktop et mobile).
-- Mise à jour du repository.
+- Mise en place quasi-terminée des composants de la page d'accueil (desktop et mobile).
 
 Travail à faire :
-- Ajout des composants de toutes les pages de l'application React.
+- Ajout des composants des 3 autres pages de l'application React.
