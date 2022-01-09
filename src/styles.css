@@ -109,9 +109,61 @@
     margin: 268px 20px 20px 20px
 }
 
+/* Règles pour le composant "Apropos". */
+.banner_apropos {
+    background: url("./assets/Banner_Apropos.png");
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    margin: 40px auto
+}
+
+.banner_bgr_apropos {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    margin: 0 auto
+}
+
 /* Règles pour d'autres composants. */
 .tag {
     background: goldenrod
+}
+
+/* Règles pour le composant "Page404". */
+.text_404 {
+    color: #FF6060;
+    text-align: center;
+}
+
+.title_404 {
+    font-size: 288px;
+    font-weight: bold;
+    line-height: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.phrase_404 {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0
+}
+
+.link_404_parag {
+    padding: 0;
+    margin: 140px 0 100px 0
+}
+
+.link_404 {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500
 }
 
 /* Règles de test à supprimer plus tard. */
@@ -127,20 +179,20 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 1360px) {
-    .header, .banner, .gallery {
+    .header, .banner, .gallery, .banner_apropos {
         width: 90%
     }
 
-    .banner {
+    .banner, .banner_apropos {
         background-position: center;
     }
 
-    .banner_bgr, .banner_txt {
+    .banner_bgr, .banner_txt, .banner_bgr_apropos {
         width: 100%
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 840px) {
     .banner_txt {
         align-items: flex-start;
         flex-direction: column;
@@ -170,6 +222,12 @@
 
     .banner, .banner_bgr, .banner_txt {
         height: 111px;
+        border-radius: 10px
+    }
+
+    .banner_apropos, .banner_bgr_apropos {
+        background: url("./assets/Banner_Apropos_mobile.png");
+        background-size: 100%;
         border-radius: 10px
     }
 
