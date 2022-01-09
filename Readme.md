@@ -10,7 +10,10 @@ Travail réalisé :
 - Ajout en local de React Router et d'autres éléments (composants, images, règles CSS...).
 - Création de ce fichier Readme.
 - Mise en place du layout (éléments présents sur toutes les pages).
-- Mise en place quasi-terminée des composants de la page d'accueil (desktop et mobile).
+- Mise en place des composants de la page d'accueil (desktop et mobile).
+- Mise en place des composants de la page 404 (desktop).
+- Début de mise en place des composants de la page "A propos" (desktop et mobile).
 
 Travail à faire :
-- Ajout des composants des 3 autres pages de l'application React.
+- Page d'accueil : Ajout de la fonctionnalité de récupération de la base de données.
+- Ajout des composants des 2 autres pages de l'application React.
