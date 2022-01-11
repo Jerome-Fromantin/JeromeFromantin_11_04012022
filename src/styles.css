@@ -33,14 +33,17 @@
 }
 
 .layout_footer {
-    position: static;
+    position: relative;
     bottom: 0;
+    left: 0;
     background: black;
     height: 209px;
     width: 100%;
     color: white;
     font-size: 24px;
-    text-align: center
+    text-align: center;
+    padding: 0;
+    margin: 0
 }
 
 .footer-logo {
@@ -84,29 +87,70 @@
 .gallery {
     background: #E5E5E5;
     width: 1240px;
-    height: 500px;
     text-align: center;
     border-radius: 25px;
+    padding: 25px 0;
     margin: 0 auto 40px auto
 }
 
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 25px
+}
+
 .card {
+    position: relative;
     display: inline-block;
-    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.5) 100%), #FF6060;
+    overflow: hidden;
     width: 340px;
     height: 340px;
+    border: 1px black solid;
     border-radius: 10px;
-    margin: 50px auto
+    margin: 25px
+}
+
+.card_photo {
+    display: inline-block;
+    width: auto;
+    height: 340px
 }
 
 .card_title {
-    background: transparent;
-    width: 300px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 250px;
     height: 52px;
-    color: white;
+    color: #FF6060;
     font-size: 18px;
     text-align: left;
-    margin: 268px 20px 20px 20px
+    border: 1px #FF6060 solid;
+    margin: 0
+}
+
+.card_bgr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}
+.card_bgr:hover {
+    background: rgba(0, 0, 0, 0.5)
+}
+
+/* Règles pour le composant "Logement" . */
+.tag {
+    background: goldenrod
 }
 
 /* Règles pour le composant "Apropos". */
@@ -129,9 +173,27 @@
     margin: 0 auto
 }
 
-/* Règles pour d'autres composants. */
-.tag {
-    background: goldenrod
+.divs_apropos {
+    text-align: center;
+    margin: 0 auto
+}
+
+.titre_apropos {
+    border: 1px black solid;
+    background: #FF6060;
+    width: 1023px;
+    color: white;
+    text-align: left;
+    margin: 20px auto 0 auto
+}
+
+.texte_apropos {
+    border: 1px black solid;
+    background: #F6F6F6;
+    width: 1023px;
+    color: #FF6060;
+    text-align: left;
+    margin: 0 auto
 }
 
 /* Règles pour le composant "Page404". */
@@ -143,7 +205,6 @@
 .title_404 {
     font-size: 288px;
     font-weight: bold;
-    line-height: 100%;
     padding: 0;
     margin: 0
 }
@@ -166,17 +227,6 @@
     font-weight: 500
 }
 
-/* Règles de test à supprimer plus tard. */
-.test {
-    height: 50px;
-    border: 2px green solid;
-    margin-bottom: 10px
-}
-
-.test2 {
-    border: 1px red solid
-}
-
 /* MEDIA QUERIES */
 @media (max-width: 1360px) {
     .header, .banner, .gallery, .banner_apropos {
@@ -192,12 +242,49 @@
     }
 }
 
+@media (max-width: 920px) {
+    .title_404 {
+        font-size: 224px
+    }
+
+    .phrase_404 {
+        font-size: 30px
+    }
+}
+
 @media (max-width: 840px) {
     .banner_txt {
         align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         padding-left: 30px
+    }
+}
+
+@media (max-width: 800px) {
+    .title_404 {
+        font-size: 160px
+    }
+
+    .phrase_404 {
+        font-size: 24px
+    }
+}
+
+@media (max-width: 610px) {
+    .title_404 {
+        font-size: 96px;
+        margin-top: 180px
+    }
+
+    .phrase_404 {
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto
+    }
+
+    .link_404 {
+        font-size: 14px
     }
 }
 
@@ -240,7 +327,6 @@
     .gallery {
         background: white;
         width: 335px;
-        height: 500px;
         text-align: center;
         border-radius: 10px;
         margin: 0 auto 40px auto
@@ -263,7 +349,7 @@
 }
 
 @media (max-width: 375px) {
-    .link_accueil, .link_apropos {
-        color: green
+    .link_404_parag {
+        margin: 130px 0 15px 0
     }
 }
