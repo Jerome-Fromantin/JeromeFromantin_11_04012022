@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import {logements} from '../assets/logements'
 
 class Home extends React.Component {
     render() {
@@ -12,7 +14,17 @@ class Home extends React.Component {
                 </div>
             </div>
             <div className="gallery">
-                <div className="card"><div className="card_title">Titre de la<br/>location</div></div>
+                <ul className="list">
+                    {logements.map(({id, title, cover}) => (
+                        <li key={id} className="card">
+                            <Link to="logement/:id" className="card_link">
+                                <div><img src={cover} alt="Logement" className="card_photo"/></div>
+                                <div className="card_title">{title}</div>
+                                <div className="card_bgr"></div>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>)
     }

@@ -8,8 +8,8 @@ class Header extends React.Component{
         return (<div className='header'>
             <img src={logo} alt="Logo Kasa" className="logo"/>
             <span className='nav'>
-                <Link to="/" className='link_accueil'>Accueil</Link>
-                <Link to="/apropos" className='link_apropos'>A Propos</Link>
+                <Link to="/" className="link_accueil">Accueil</Link>
+                <Link to="/apropos" className="link_apropos">A Propos</Link>
             </span>
         </div>)
     }
