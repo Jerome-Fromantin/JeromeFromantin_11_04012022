@@ -11,9 +11,10 @@ Travail réalisé :
 - Création de ce fichier Readme.
 - Mise en place du layout (éléments présents sur toutes les pages).
 - Mise en place des composants de la page d'accueil (desktop et mobile).
-- Mise en place des composants de la page 404 (desktop).
+- Mise en place de la fonctionnalité de récupération de la base de données.
+- Mise en place partielle de l'affichage de ces données sur plusieurs pages en fonction de l'id.
+- Mise en place des composants de la page 404 (desktop et mobile).
 - Début de mise en place des composants de la page "A propos" (desktop et mobile).
 
 Travail à faire :
-- Page d'accueil : Ajout de la fonctionnalité de récupération de la base de données.
-- Ajout des composants des 2 autres pages de l'application React.
+- Ajout des composants et fonctionnalités des 2 pages "Logement" et "A propos".
