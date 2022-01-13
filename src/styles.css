@@ -131,6 +131,7 @@
     color: #FF6060;
     font-size: 18px;
     text-align: left;
+    padding: 3px 5px;
     border: 1px #FF6060 solid;
     margin: 0
 }
@@ -174,26 +175,40 @@
 }
 
 .divs_apropos {
-    text-align: center;
-    margin: 0 auto
+    display: flex;
+    flex-direction: column;
 }
 
 .titre_apropos {
     border: 1px black solid;
     background: #FF6060;
-    width: 1023px;
+    width: 983px;
     color: white;
+    font-size: 24px;
+    font-weight: 500;
     text-align: left;
+    padding: 5px 20px;
     margin: 20px auto 0 auto
+}
+.titre_apropos:hover + .texte_apropos {
+    display: block
 }
 
 .texte_apropos {
-    border: 1px black solid;
+    display: none;
     background: #F6F6F6;
-    width: 1023px;
+    width: 983px;
     color: #FF6060;
+    font-size: 24px;
+    font-weight: 400;
     text-align: left;
-    margin: 0 auto
+    padding: 5px 20px;
+    border: 1px black solid;
+    margin: 0 auto;
+
+    transform-origin: 0% 0%;
+    transition-property: display;
+    transition-duration: 3s;
 }
 
 /* Règles pour le composant "Page404". */
