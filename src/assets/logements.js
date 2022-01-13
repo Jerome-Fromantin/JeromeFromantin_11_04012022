@@ -22,7 +22,7 @@ export const logements = [
 			"Micro-Ondes",
 			"Douche italienne",
 			"Frigo",
-			"WIFI"
+			"Wi-Fi"
 		],
 		"tags": [
 			"Batignolle",
@@ -31,7 +31,7 @@ export const logements = [
 	},
 	{
 		"id": "b9123946",
-		"title": "Magnifique appartement proche Canal Saint Martin",
+		"title": "Magnifique appartement proche Canal Saint-Martin",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
@@ -41,7 +41,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 		],
-		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. À 3 minutes à pied du Canal Saint-Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
 		"host": {
 			"name": "Della Case",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -50,14 +50,14 @@ export const logements = [
 		"location": "Ile de France - Paris 10e",
 		"equipments": [
 			"Parking",
-			"Sèche Cheveux",
+			"Sèche-cheveux",
 			"Machine à laver",
-			"Wi-fi",
+			"Wi-Fi",
 			"Cuisine équipée",
 			"Télévision"
 		],
 		"tags": [
-			"Canal Saint Martin",
+			"Canal Saint-Martin",
 			"République",
 			"Appartement"
 		]
@@ -80,10 +80,10 @@ export const logements = [
 		"rating": "3",
 		"location": "Ile de France - Paris 20e",
 		"equipments": [
-			"Wi-fi",
+			"Wi-Fi",
 			"Cuisine équipée",
 			"Télévision",
-			"Sèche Cheveux"
+			"Sèche-cheveux"
 		],
 		"tags": [
 			"Buttes Chaumont",
@@ -93,7 +93,7 @@ export const logements = [
 	},
 	{
 		"id": "7af00cd6",
-		"title": "Nid douillet au coeur du 11ème",
+		"title": "Nid douillet au cœur du 11ème",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
@@ -101,7 +101,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
 		],
-		"description": "Venez découvrir Paris en séjournant dans ce nid douillet au coeur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fêtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de découvrir la night-life parisienne à seulement 5 minutes de l'appartement.",
+		"description": "Venez découvrir Paris en séjournant dans ce nid douillet au cœur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fêtards d'entre vous, la rue Jean-Pierre Timbaud vous permettra de découvrir la night-life parisienne à seulement 5 minutes de l'appartement.",
 		"host": {
 			"name": "Della Case",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -110,8 +110,8 @@ export const logements = [
 		"location": "Ile de France - Paris 11e",
 		"equipments": [
 			"Micro-Ondes",
-			"Wi-fi",
-			"Chambre Séparée",
+			"Wi-Fi",
+			"Chambre séparée",
 			"Climatisation",
 			"Télévision"
 		],
@@ -143,9 +143,9 @@ export const logements = [
 		"location": "Ile de France - Paris 10e",
 		"equipments": [
 			"Frigo Américain",
-			"Sèche Cheveux",
-			"Wi-fi",
-			"Chambre Séparée",
+			"Sèche-cheveux",
+			"Wi-Fi",
+			"Chambre séparée",
 			"Parking"
 		],
 		"tags": [
@@ -164,7 +164,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-5.jpg"
 		],
-		"description": "Venez vous imprégner de la culture parisienne dans cet ancien studio d'artiste décoré avec goût, au coeur de Montmartre.",
+		"description": "Venez vous imprégner de la culture parisienne dans cet ancien studio d'artiste décoré avec goût, au cœur de Montmartre.",
 		"host": {
 			"name": "Line Rolland",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-3.jpg"
@@ -172,7 +172,7 @@ export const logements = [
 		"rating": "5",
 		"location": "Ile de France - Paris 18e",
 		"equipments": [
-			"Chambre Séparée",
+			"Chambre séparée",
 			"Parking"
 		],
 		"tags": [
@@ -191,7 +191,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-4.jpg"
 		],
-		"description": "Ce Studio entièrement fonctionnel sera votre parfait pied à terre pour toutes vos excursions parisiennes. Idéalement situé près des lignes 2 et 4, vous accéderez très rapidement à tous les points touristiques de Paris.",
+		"description": "Ce studio entièrement fonctionnel sera votre parfait pied-à-terre pour toutes vos excursions parisiennes. Idéalement situé près des lignes 2 et 4, vous accéderez très rapidement à tous les points touristiques de Paris.",
 		"host": {
 			"name": "Hugo Perrier",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
@@ -201,8 +201,8 @@ export const logements = [
 		"equipments": [
 			"Salle de bains",
 			"Frigo",
-			"Wi-fi",
-			"Sèche Cheveux",
+			"Wi-Fi",
+			"Sèche-cheveux",
 			"Bureau",
 			"Parking"
 		],
@@ -224,7 +224,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-7-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-7-6.jpg"
 		],
-		"description": "Ce superbe appartement vous surprendra par son charme. Entièrement refait à neuf, il est équipé avec goût. La taille des pièces vous fera douter que vous êtes à Paris. Mais il vous suffit de sortir pour voir que vous êtes au coeur des plus belles attractions de Paris : le Louvre, la Tour Eiffel, le Grand Palais sont à deux pas. À vous de venir découvrir Paris !",
+		"description": "Ce superbe appartement vous surprendra par son charme. Entièrement refait à neuf, il est équipé avec goût. La taille des pièces vous fera douter que vous êtes à Paris. Mais il vous suffit de sortir pour voir que vous êtes au cœur des plus belles attractions de Paris : le Louvre, la Tour Eiffel, le Grand Palais sont à deux pas. À vous de venir découvrir Paris !",
 		"host": {
 			"name": "Sébastien Fournier",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-5.jpg"
@@ -232,8 +232,8 @@ export const logements = [
 		"rating": "5",
 		"location": "Ile de France - Paris 6e",
 		"equipments": [
-			"Wi-fi",
-			"Sèche Cheveux",
+			"Wi-Fi",
+			"Sèche-cheveux",
 			"Machine à laver",
 			"Parking",
 			"Lit King Size",
@@ -267,8 +267,8 @@ export const logements = [
 		"equipments": [
 			"Climatisation",
 			"Machine à laver",
-			"Sèche Cheveux",
-			"Wi-fi",
+			"Sèche-cheveux",
+			"Wi-Fi",
 			"Parking"
 		],
 		"tags": [
@@ -287,7 +287,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-9-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-9-4.jpg"
 		],
-		"description": "Respirer en plein coeur de Paris ? C'est possible ! Avec vue sur un parc résidentiel, vous pourrez ouvrir les fenêtres sans avoir à souffrir du bruit des voitures et de la pollution. Au contraire, vous pourrez écouter les oiseaux. Notre appartement est également idéalement situé au coeur du 11ème arrondissement. Proche des lignes 3 et 2, vous pourrez découvrir Paris sans effort !",
+		"description": "Respirer en plein cœur de Paris ? C'est possible ! Avec vue sur un parc résidentiel, vous pourrez ouvrir les fenêtres sans avoir à souffrir du bruit des voitures et de la pollution. Au contraire, vous pourrez écouter les oiseaux. Notre appartement est également idéalement situé au cœur du 11ème arrondissement. Proche des lignes 3 et 2, vous pourrez découvrir Paris sans effort !",
 		"host": {
 			"name": "Adrien Chiran",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-6.jpg"
@@ -297,9 +297,9 @@ export const logements = [
 		"equipments": [
 			"Vue Parc",
 			"Chauffage",
-			"Sèche linge",
-			"Sèche Cheveux",
-			"Wi-fi",
+			"Sèche-linge",
+			"Sèche-cheveux",
+			"Wi-Fi",
 			"Ascenseur"
 		],
 		"tags": [
@@ -311,7 +311,7 @@ export const logements = [
 	},
 	{
 		"id": "2cf259e1",
-		"title": "Charmant Studio Marais",
+		"title": "Charmant studio Marais",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
@@ -319,7 +319,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-4.jpg"
 		],
-		"description": "Situé en plein coeur du Marais, notre studio est idéal pour les touristes en quête de découverte. Sa cuisine toute équipée est particulièrement pratique.",
+		"description": "Situé en plein cœur du Marais, notre studio est idéal pour les touristes en quête de découverte. Sa cuisine toute équipée est particulièrement pratique.",
 		"host": {
 			"name": "Victor Moran",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-7.jpg"
@@ -329,8 +329,8 @@ export const logements = [
 		"equipments": [
 			"Clic-clac",
 			"Four",
-			"Sèche Cheveux",
-			"Wi-fi"
+			"Sèche-cheveux",
+			"Wi-Fi"
 		],
 		"tags": [
 			"Marais",
@@ -358,8 +358,8 @@ export const logements = [
 		"equipments": [
 			"Rangements",
 			"Lit",
-			"Sèche Cheveux",
-			"Wi-fi",
+			"Sèche-cheveux",
+			"Wi-Fi",
 			"TV",
 			"Bouilloire"
 		],
@@ -367,7 +367,7 @@ export const logements = [
 			"Marais",
 			"République",
 			"Studio",
-			"Proche Métros",
+			"Proche métros",
 			"Commerces"
 		]
 	},
@@ -382,13 +382,13 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-5.jpg"
 		],
-		"description": "Quittez Paris pour vous mettre au vert. À seulement 30 minutes de la Gare du Nord, venez découvrir la forêt d'Ecouen directement depuis la fenêtre de votre bungalow. Entièrement équipé, ce logement saura vous accueillir dans le confort, tout en vous permettant de vous concentrer sur l'essentiel. Le matin, ouvrez les fenêtres, et profitez du chant des oiseaux.",
+		"description": "Quittez Paris pour vous mettre au vert. À seulement 30 minutes de la Gare du Nord, venez découvrir la forêt d'Écouen directement depuis la fenêtre de votre bungalow. Entièrement équipé, ce logement saura vous accueillir dans le confort, tout en vous permettant de vous concentrer sur l'essentiel. Le matin, ouvrez les fenêtres, et profitez du chant des oiseaux.",
 		"host": {
 			"name": "Sarah Devit",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-8.jpg"
 		},
 		"rating": "5",
-		"location": "Ile de France - Ecouen",
+		"location": "Ile de France - Écouen",
 		"equipments": [
 			"SDB",
 			"Cuisine équipée",
@@ -399,7 +399,7 @@ export const logements = [
 		"tags": [
 			"Forêt",
 			"Nature",
-			"Musée d'Ecouen"
+			"Musée d'Écouen"
 		]
 	},
 	{
@@ -413,7 +413,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-13-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-13-6.jpg"
 		],
-		"description": "Vous chercher un endroit pour fêter un anniversaire entre amis tout en restant proche de Paris ? Ne cherchez plus ! Entièrement équipée, cette maison est l'endroit idéal pour se regrouper.",
+		"description": "Vous cherchez un endroit pour fêter un anniversaire entre amis tout en restant proche de Paris ? Ne cherchez plus ! Entièrement équipée, cette maison est l'endroit idéal pour se regrouper.",
 		"host": {
 			"name": "Karen Guillet",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
@@ -425,7 +425,7 @@ export const logements = [
 			"Cuisine équipée",
 			"Frigo",
 			"Bouilloire",
-			"WIFI",
+			"Wi-Fi",
 			"Télévision",
 			"Cintres",
 			"Équipements de base"
@@ -459,7 +459,7 @@ export const logements = [
 			"SDB",
 			"Cuisine équipée",
 			"Frigo",
-			"WIFI",
+			"Wi-Fi",
 			"TV",
 			"Cintres",
 			"Four",
@@ -474,7 +474,7 @@ export const logements = [
 	},
 	{
 		"id": "1e181317",
-		"title": "Loft de Luxe à la Défense",
+		"title": "Loft de luxe à la Défense",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg",
@@ -483,7 +483,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-5.jpg"
 		],
-		"description": "Si vous êtes à la recherche de l'endroit idéal pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idéal. En plein coeur de la Défense, il dispose également de tous les équipements pour que vous soyez comme chez vous.",
+		"description": "Si vous êtes à la recherche de l'endroit idéal pour poser vos valises entre deux rendez-vous d'affaire, ne cherchez plus. Notre loft est l'endroit idéal. En plein cœur de la Défense, il dispose également de tous les équipements pour que vous soyez comme chez vous.",
 		"host": {
 			"name": "Julie Donatella",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
@@ -495,7 +495,7 @@ export const logements = [
 			"Télévision",
 			"Four",
 			"Frigo",
-			"Wi-fi",
+			"Wi-Fi",
 			"Micro-Ondes",
 			"Parking"
 		],
@@ -507,7 +507,7 @@ export const logements = [
 	},
 	{
 		"id": "1e180563",
-		"title": "Charmant apt aux portes de Paris",
+		"title": "Charmant appartement aux portes de Paris",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
@@ -516,7 +516,7 @@ export const logements = [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-5.jpg"
 		],
-		"description": "Ce charmant appartement offre des prestations de luxe, aux portes de Paris. À deux pas de la ligne 3, vous pourrez accéder à toutes les attractions touristiques dont vous avez toujours rêvées.",
+		"description": "Ce charmant appartement offre des prestations de luxe, aux portes de Paris. À deux pas de la ligne 3, vous pourrez accéder à toutes les attractions touristiques dont vous avez toujours rêvé.",
 		"host": {
 			"name": "Julie Donatella",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
@@ -528,12 +528,12 @@ export const logements = [
 			"Four",
 			"Frigo",
 			"Hotte",
-			"Wi-fi",
+			"Wi-Fi",
 			"Micro-Ondes"
 		],
 		"tags": [
 			"Vue Parc",
-			"Apt de Charme"
+			"Apt de charme"
 		]
 	},
 	{
@@ -552,7 +552,7 @@ export const logements = [
 		"location": "Ile de France - Paris 20e",
 		"equipments": [
 			"Bouilloire",
-			"Wi-fi",
+			"Wi-Fi",
 			"Micro-Ondes"
 		],
 		"tags": [
@@ -580,7 +580,7 @@ export const logements = [
 			"Équipements de base",
 			"Four",
 			"Frigo",
-			"Wi-fi",
+			"Wi-Fi",
 			"Micro-Ondes"
 		],
 		"tags": [
@@ -596,7 +596,7 @@ export const logements = [
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"
 		],
-		"description": "Au coeur du quartier historique du Marais, cet appartement est idéal pour un couple à la découverte de Paris. Situé sur la rue de Rivoli, il est à 5 minutes du Louvre.",
+		"description": "Au cœur du quartier historique du Marais, cet appartement est idéal pour un couple à la découverte de Paris. Situé sur la rue de Rivoli, il est à 5 minutes du Louvre.",
 		"host": {
 			"name": "Nathalie Jean",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
@@ -604,7 +604,7 @@ export const logements = [
 		"rating": "4",
 		"location": "Ile de France - Paris 13e",
 		"equipments": [
-			"Wi-fi",
+			"Wi-Fi",
 			"Équipements de base",
 			"Micro-Ondes",
 			"Frigo",
