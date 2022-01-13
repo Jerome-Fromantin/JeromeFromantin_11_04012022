@@ -17,7 +17,7 @@ class Home extends React.Component {
                 <ul className="list">
                     {logements.map(({id, title, cover}) => (
                         <li key={id} className="card">
-                            <Link to="logement/:id" className="card_link">
+                            <Link to={"logement/" + id} className="card_link">
                                 <div><img src={cover} alt="Logement" className="card_photo"/></div>
                                 <div className="card_title">{title}</div>
                                 <div className="card_bgr"></div>
