@@ -14,8 +14,10 @@ Travail réalisé :
 - Mise en place de la fonctionnalité de récupération de la base de données.
 - Mise en place de l'affichage de ces données sur plusieurs pages en fonction de l'id.
 - Mise en place des composants de la page 404 (desktop et mobile).
-- Début de mise en place des composants de la page "A propos" (desktop et mobile).
-- Début de mise en place des transitions de la page "A propos".
+- Mise en place des composants de la page "A propos" (desktop).
+- Mise en place des transitions de la page "A propos".
+- Début de mise en place des composants de la page "A propos" (mobile).
 
 Travail à faire :
-- Ajout des composants et fonctionnalités des 2 pages "Logement" et "A propos".
+- Améliorer la version "mobile" de la page "A propos".
+- Ajout des composants et fonctionnalités de la page "Logement".
