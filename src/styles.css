@@ -177,10 +177,12 @@
 .divs_apropos {
     display: flex;
     flex-direction: column;
+    margin: 0 auto 40px auto
 }
 
 .titre_apropos {
-    border: 1px black solid;
+    display: flex;
+    justify-content: space-between;
     background: #FF6060;
     width: 983px;
     color: white;
@@ -188,27 +190,50 @@
     font-weight: 500;
     text-align: left;
     padding: 5px 20px;
+    border-radius: 5px;
     margin: 20px auto 0 auto
 }
-.titre_apropos:hover + .texte_apropos {
+
+.downarrow_no {
+    display: none
+}
+
+.uparrow {
+    display: none
+}
+
+.uparrow_yes {
     display: block
 }
 
 .texte_apropos {
-    display: none;
-    background: #F6F6F6;
+    background: white;
     width: 983px;
+    max-height: 0;
+    overflow: hidden;
     color: #FF6060;
     font-size: 24px;
     font-weight: 400;
     text-align: left;
     padding: 5px 20px;
-    border: 1px black solid;
+    border-radius: 5px;
     margin: 0 auto;
 
-    transform-origin: 0% 0%;
-    transition-property: display;
-    transition-duration: 3s;
+    transition: background 1s, max-height 1s;
+}
+
+.texte_apropos_open {
+    background: #F7F7F7;
+    width: 983px;
+    max-height: 150px;
+    overflow: hidden;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0 auto
 }
 
 /* Règles pour le composant "Page404". */
@@ -254,6 +279,25 @@
 
     .banner_bgr, .banner_txt, .banner_bgr_apropos {
         width: 100%
+    }
+}
+
+@media (max-width: 1137px) {
+    .divs_apropos {
+        align-items: center;
+        width: 100%
+    }
+
+    .titre_apropos, .texte_apropos, .texte_apropos_open {
+        width: 80%
+    }
+
+    .titre_apropos {
+        margin: 20px 0 0 0
+    }
+
+    .texte_apropos, .texte_apropos_open {
+        margin: 0
     }
 }
 
