@@ -8,21 +8,19 @@ import Logement from './pages/logement';
 import Page404 from './pages/page_404'
 
 
-class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout/>}>
-            <Route index element={<Home/>}/>
-            <Route path="apropos" element={<Apropos/>}/>
-            <Route path="logement/:id" element={<Logement/>}/>
-            <Route path="*" element={<Page404/>}/>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    )
-  }
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="apropos" element={<Apropos/>}/>
+          <Route path="logement/:id" element={<Logement/>}/>
+          <Route path="*" element={<Page404/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
