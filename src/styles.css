@@ -177,6 +177,7 @@
 .divs_apropos {
     display: flex;
     flex-direction: column;
+    padding: 0;
     margin: 0 auto 40px auto
 }
 
@@ -184,14 +185,26 @@
     display: flex;
     justify-content: space-between;
     background: #FF6060;
-    width: 983px;
+    width: 1023px;
     color: white;
     font-size: 24px;
     font-weight: 500;
     text-align: left;
-    padding: 5px 20px;
+    padding: 5px 0;
     border-radius: 5px;
     margin: 20px auto 0 auto
+}
+.titre_apropos:hover {
+    cursor: pointer;
+    background: #FF4040
+}
+
+.titre_nom {
+    margin-left: 20px
+}
+
+.titre_fleches {
+    margin-right: 20px
 }
 
 .downarrow_no {
@@ -208,14 +221,14 @@
 
 .texte_apropos {
     background: white;
-    width: 983px;
+    width: 1023px;
     max-height: 0;
     overflow: hidden;
     color: #FF6060;
     font-size: 24px;
     font-weight: 400;
     text-align: left;
-    padding: 5px 20px;
+    padding: 5px 0;
     border-radius: 5px;
     margin: 0 auto;
 
@@ -224,16 +237,20 @@
 
 .texte_apropos_open {
     background: #F7F7F7;
-    width: 983px;
+    width: 1023px;
     max-height: 150px;
     overflow: hidden;
     color: #FF6060;
     font-size: 24px;
     font-weight: 400;
     text-align: left;
-    padding: 5px 20px;
+    padding: 5px 0;
     border-radius: 5px;
     margin: 0 auto
+}
+
+.text_content {
+    margin: 0 20px
 }
 
 /* Règles pour le composant "Page404". */
@@ -285,11 +302,11 @@
 @media (max-width: 1137px) {
     .divs_apropos {
         align-items: center;
-        width: 100%
+        width: 90%
     }
 
     .titre_apropos, .texte_apropos, .texte_apropos_open {
-        width: 80%
+        width: 100%
     }
 
     .titre_apropos {
@@ -400,6 +417,30 @@
 
     .card_title {
         margin: 188px auto 15px auto
+    }
+
+    .titre_apropos {
+        font-size: 13px;
+    }
+
+    .titre_nom {
+        margin-left: 10px
+    }
+    
+    .titre_fleches {
+        margin-right: 10px
+    }
+
+    .arrowImg {
+        height: 9px
+    }
+
+    .texte_apropos, .texte_apropos_open {
+        font-size: 12px;
+    }
+
+    .text_content {
+        margin: 4px 10px 0 10px
     }
 
     .layout_footer {
