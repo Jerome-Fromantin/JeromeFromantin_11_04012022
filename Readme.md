@@ -17,6 +17,7 @@ Travail réalisé :
 - Mise en place des composants de la page "A propos" (desktop).
 - Mise en place des transitions de la page "A propos".
 - Début de mise en place des composants de la page "A propos" (mobile).
+- Transformation des composants << classe >> en composants << fonction >>.
 
 Travail à faire :
 - Améliorer la version "mobile" de la page "A propos".
