@@ -149,11 +149,6 @@
     background: rgba(0, 0, 0, 0.5)
 }
 
-/* Règles pour le composant "Logement" . */
-.tag {
-    background: goldenrod
-}
-
 /* Règles pour le composant "Apropos". */
 .banner_apropos {
     background: url("./assets/Banner_Apropos.png");
@@ -251,6 +246,140 @@
 
 .text_content {
     margin: 0 20px
+}
+
+/* Règles pour le composant "Logement" . */
+.gallery_logement {
+    width: 1244px;
+    height: 419px;
+    border: 1px red solid;
+    border-radius: 25px;
+    margin: 0 auto
+}
+
+.firstline_logement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1240px;
+    color: #FF6060;
+    margin: 30px auto 0 auto
+}
+
+.firstline_titre {
+    font-size: 36px;
+    font-weight: 500
+}
+
+.firstline_lieu {
+    font-size: 18px;
+    font-weight: 500
+}
+
+.firstline_right {
+    display: flex;
+    align-items: center
+}
+
+.firstline_nom {
+    width: 93px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 10px
+}
+
+.firstline_img {
+    background: green;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%
+}
+
+.tags_stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1240px;
+    margin: 10px auto 0 auto
+}
+
+.tag {
+    background: #FF6060;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px 20px;
+    border-radius: 10px;
+    margin-right: 10px
+}
+
+.star {
+    margin-left: 10px
+}
+
+.descr_equip {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1240px;
+    margin: 10px auto 0 auto
+}
+
+.titre_descrequip {
+    display: flex;
+    justify-content: space-between;
+    background: #FF6060;
+    width: 582px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin: 20px auto 0 auto
+}
+.titre_descrequip:hover {
+    cursor: pointer;
+    background: #FF4040
+}
+
+.texte_descrequip {
+    background: white;
+    width: 582px;
+    max-height: 0;
+    overflow: hidden;
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin: 0 auto;
+
+    transition: background 1s, max-height 1s;
+}
+
+.texte_descrequip_open {
+    background: #F7F7F7;
+    width: 582px;
+    max-height: 150px;
+    overflow: hidden;
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin: 0 auto
+}
+
+.text_content_descrequip {
+    margin: 4px 20px 0 20px
+}
+
+.toDelete {
+    padding-left: 50px
 }
 
 /* Règles pour le composant "Page404". */
