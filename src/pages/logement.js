@@ -1,6 +1,7 @@
 import React from 'react'
 import {logements} from '../assets/logements'
-//import Tag from '../composants/Tag'
+import Previous from '../assets/Previous.png'
+import Next from '../assets/Next.png'
 import Starp from '../assets/Star_pink.png'
 import Starg from '../assets/Star_grey.png'
 import down_arrow from '../assets/DownArrow.png'
@@ -9,7 +10,7 @@ import up_arrow from '../assets/UpArrow.png'
 class Logement extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {logement:{}}
+        this.state = {logement: {pictures: [], host: {}, tags: [], equipments: []}}
     }
 
     getLogementId() {
@@ -24,41 +25,44 @@ class Logement extends React.Component {
         this.setState({logement})
     }
 
-    openClose1() {
-        let arrow1 = document.getElementById("arrowA1")
+    openClose(event) {
+        let titreTarget = event.currentTarget
+        let titreId = titreTarget.id
+        let arrow1 = document.querySelector(`#${titreId} .downarrow`)
         arrow1.classList.toggle("downarrow_no")
-        let arrow2 = document.getElementById("arrowA2")
+        let arrow2 = document.querySelector(`#${titreId} .uparrow`)
         arrow2.classList.toggle("uparrow_yes")
-        let text = document.getElementById("texteA")
-        text.classList.toggle("texte_descrequip_open")
-    }
-    openClose2() {
-        let arrow1 = document.getElementById("arrowB1")
-        arrow1.classList.toggle("downarrow_no")
-        let arrow2 = document.getElementById("arrowB2")
-        arrow2.classList.toggle("uparrow_yes")
-        let text = document.getElementById("texteB")
+        let text = titreTarget.nextSibling
         text.classList.toggle("texte_descrequip_open")
     }
     
     render() {
-        const {pictures, title, location, description, equipments} = this.state.logement
+        const {pictures, title, location, host, tags, description, equipments} = this.state.logement
+
         return (<div>
-            <div className="gallery_logement"><img src={pictures} alt="Logement" className="xxx"/></div>
+            <div className="gallery_logement">
+                {/*<img src={pictures} alt="Logement" className="gallery_picture"/>*/}
+                {pictures.map((item, {id}) => (<img key={id} src={item} alt="Logement" className="gallery_picture"/>))}
+            </div>
+            <div className="gallery_arrows">
+                <img src={Previous} alt="Précédent" className="xxx"/>
+                <img src={Next} alt="Suivant" className="xxx"/>
+            </div>
+            <div className="gallery_numero">1/1</div>
+            {/*Numéro de photo/Nombre de photos*/}
             <div className="firstline_logement">
                 <div>
                     <div className="firstline_titre">{title}</div>
                     <div className="firstline_lieu">{location}</div>
                 </div>
                 <div className="firstline_right">
-                    <div className="firstline_nom"><p>Prénom Nom</p></div>{/*{host.name}*/}
-                    <div className="firstline_img"></div>
-                    {/*<img src={host.picture} alt="Propriétaire" className="xxx"/>*/}
+                    <div className="firstline_nom"><p>{host.name}</p></div>
+                    <div><img src={host.picture} alt="Propriétaire" className="firstline_img"/></div>
                 </div>
             </div>
             <div className="tags_stars">
                 <div>
-                    <span className="tag">Premier tag</span><span className="tag">Deuxième tag</span>
+                    <p>{tags.map((item, {id}) => (<span className="tag" key={id}>{item}</span>))}</p>
                 </div>
                 <div>
                     <img src={Starp} alt="Etoile classement" className="star"/>
@@ -70,37 +74,36 @@ class Logement extends React.Component {
             </div>
             <div className="descr_equip">
                 <div>
-                    <div className="titre_descrequip" onClick={this.openClose1}>
+                    <div id="titre1" className="titre_descrequip" onClick={this.openClose}>
                         <span className="titre_nom">Description</span>
                         <span className="titre_fleches">
-                            <span id="arrowA1" className="downarrow"><img src={down_arrow} className="arrowImg" alt="Flèche vers le bas"/></span>
-                            <span id="arrowA2" className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
+                            <span className="downarrow"><img src={down_arrow} className="arrowImg" alt="Flèche vers le bas"/></span>
+                            <span className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
                         </span>
                     </div>
-                    <div id="texteA" className="texte_descrequip">
+                    <div className="texte_descrequip">
                         <p className="text_content_descrequip">{description}</p>
                     </div>
                 </div>
                 <div>
-                    <div className="titre_descrequip" onClick={this.openClose2}>
+                    <div id="titre2" className="titre_descrequip" onClick={this.openClose}>
                         <span className="titre_nom">Équipements</span>
                         <span className="titre_fleches">
-                            <span id="arrowB1" className="downarrow"><img src={down_arrow} className="arrowImg" alt="Flèche vers le bas"/></span>
-                            <span id="arrowB2" className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
+                            <span className="downarrow"><img src={down_arrow} className="arrowImg" alt="Flèche vers le bas"/></span>
+                            <span className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
                         </span>
                     </div>
-                    <div id="texteB" className="texte_descrequip">
-                        <p className="text_content_descrequip">
-                            {equipments}
-                        </p>
+                    <div className="texte_descrequip">
+                        <ul className="liste_descrequip">
+                            {equipments.map((item, {id}) => (<li key={id}>{item}</li>))}
+                        </ul>
                     </div>
                 </div>
             </div>
             <div className="toDelete">
                 <p>Composants encore statiques :</p>
-                <p>- Galerie d'images</p>
-                <p>- Nom et image ronde à droite</p>
-                <p>- Tags et étoiles</p>
+                <p>- Galerie : images (sauf quand une seule), flèches, numérotation</p>
+                <p>- Etoiles</p>
             </div>
         </div>)
     }
