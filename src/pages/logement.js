@@ -1,9 +1,7 @@
 import React from 'react'
 import {logements} from '../assets/logements'
-import Previous from '../assets/Previous.png'
-import Next from '../assets/Next.png'
-import Starp from '../assets/Star_pink.png'
-import Starg from '../assets/Star_grey.png'
+import Gallery from '../composants/Gallery'
+import StarScale from '../composants/StarScale';
 import down_arrow from '../assets/DownArrow.png'
 import up_arrow from '../assets/UpArrow.png'
 
@@ -37,39 +35,22 @@ class Logement extends React.Component {
     }
     
     render() {
-        const {pictures, title, location, host, tags, description, equipments} = this.state.logement
+        const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement
 
         return (<div>
-            <div className="gallery_logement">
-                {/*<img src={pictures} alt="Logement" className="gallery_picture"/>*/}
-                {pictures.map((item, {id}) => (<img key={id} src={item} alt="Logement" className="gallery_picture"/>))}
-            </div>
-            <div className="gallery_arrows">
-                <img src={Previous} alt="Précédent" className="xxx"/>
-                <img src={Next} alt="Suivant" className="xxx"/>
-            </div>
-            <div className="gallery_numero">1/1</div>
-            {/*Numéro de photo/Nombre de photos*/}
-            <div className="firstline_logement">
+            {<Gallery photos={pictures}/>}
+            <div className="main_infos">
                 <div>
-                    <div className="firstline_titre">{title}</div>
-                    <div className="firstline_lieu">{location}</div>
+                    <div className="logement_titre">{title}</div>
+                    <div className="logement_lieu">{location}</div>
+                    <p className="logement_tags">{tags.map((item, id) => (<span className="tag" key={id}>{item}</span>))}</p>
                 </div>
-                <div className="firstline_right">
-                    <div className="firstline_nom"><p>{host.name}</p></div>
-                    <div><img src={host.picture} alt="Propriétaire" className="firstline_img"/></div>
-                </div>
-            </div>
-            <div className="tags_stars">
-                <div>
-                    <p>{tags.map((item, {id}) => (<span className="tag" key={id}>{item}</span>))}</p>
-                </div>
-                <div>
-                    <img src={Starp} alt="Etoile classement" className="star"/>
-                    <img src={Starp} alt="Etoile classement" className="star"/>
-                    <img src={Starp} alt="Etoile classement" className="star"/>
-                    <img src={Starg} alt="Etoile classement" className="star"/>
-                    <img src={Starg} alt="Etoile classement" className="star"/>
+                <div className="infos_right">
+                    <div className="nom_img">
+                        <div className="propri_nom"><p>{host.name}</p></div>
+                        <div><img src={host.picture} alt="Propriétaire" className="propri_img"/></div>
+                    </div>
+                    <StarScale scaleValue={rating}/>
                 </div>
             </div>
             <div className="descr_equip">
@@ -95,15 +76,10 @@ class Logement extends React.Component {
                     </div>
                     <div className="texte_descrequip">
                         <ul className="liste_descrequip">
-                            {equipments.map((item, {id}) => (<li key={id}>{item}</li>))}
+                            {equipments.map((item, id) => (<li key={id}>{item}</li>))}
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="toDelete">
-                <p>Composants encore statiques :</p>
-                <p>- Galerie : images (sauf quand une seule), flèches, numérotation</p>
-                <p>- Etoiles</p>
             </div>
         </div>)
     }

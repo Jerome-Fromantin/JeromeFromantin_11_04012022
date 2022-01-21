@@ -26,10 +26,10 @@
     padding: 0 5px
 }
 .link_accueil {
-    margin-right: 30px;
+    margin-right: 30px
 }
 .link_apropos {
-    margin-left: 30px;
+    margin-left: 30px
 }
 
 .layout_footer {
@@ -143,7 +143,7 @@
     background: transparent;
     width: 340px;
     height: 340px;
-    border-radius: 10px;
+    border-radius: 10px
 }
 .card_bgr:hover {
     background: rgba(0, 0, 0, 0.5)
@@ -227,7 +227,7 @@
     border-radius: 5px;
     margin: 0 auto;
 
-    transition: background 1s, max-height 1s;
+    transition: background 1s, max-height 1s
 }
 
 .texte_apropos_open {
@@ -264,10 +264,11 @@
 }
 
 .gallery_picture {
-    width: 100%
+    width: 100%;
+    text-align: center
 }
 
-.gallery_arrows {
+.gallery_arrows_div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -276,6 +277,10 @@
     top: -167px;
     width: 1200px;
     margin: 0 auto
+}
+
+.gallery_arrows {
+    cursor: pointer
 }
 
 .gallery_numero {
@@ -291,49 +296,27 @@
     margin: 0 auto
 }
 
-.firstline_logement {
+.main_infos {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     width: 1240px;
     color: #FF6060;
     margin: 30px auto 0 auto
 }
 
-.firstline_titre {
+.logement_titre {
     font-size: 36px;
     font-weight: 500
 }
 
-.firstline_lieu {
+.logement_lieu {
     font-size: 18px;
     font-weight: 500
 }
 
-.firstline_right {
-    display: flex;
-    align-items: center
-}
-
-.firstline_nom {
-    width: 93px;
-    font-size: 18px;
-    font-weight: 500;
-    text-align: right;
-    margin-right: 10px
-}
-
-.firstline_img {
-    height: 64px;
-    border-radius: 50%
-}
-
-.tags_stars {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1240px;
-    margin: 10px auto 0 auto
+.logement_tags {
+    margin-top: 40px
 }
 
 .tag {
@@ -344,6 +327,32 @@
     padding: 2px 20px;
     border-radius: 10px;
     margin-right: 10px
+}
+
+.infos_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.nom_img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.propri_nom {
+    width: 93px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 10px
+}
+
+.propri_img {
+    height: 64px;
+    border-radius: 50%
 }
 
 .star {
@@ -387,9 +396,9 @@
     text-align: left;
     padding: 5px 0;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
 
-    transition: background 1s, max-height 1s;
+    transition: background 1s, max-height 1s
 }
 
 .texte_descrequip_open {
@@ -403,7 +412,7 @@
     text-align: left;
     padding: 5px 0;
     border-radius: 5px;
-    margin: 0 auto
+    margin: 0 auto 40px auto
 }
 
 .liste_descrequip {
@@ -413,14 +422,10 @@
     margin: 4px 0 0 20px
 }
 
-.toDelete {
-    padding-left: 50px
-}
-
 /* Règles pour le composant "Page404". */
 .text_404 {
     color: #FF6060;
-    text-align: center;
+    text-align: center
 }
 
 .title_404 {
@@ -450,15 +455,19 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 1360px) {
-    .header, .banner, .gallery, .banner_apropos {
+    .header, .banner, .gallery, .banner_apropos, .gallery_logement {
         width: 90%
     }
-
-    .banner, .banner_apropos {
-        background-position: center;
+    
+    .gallery_arrows_div {
+        width: 86%
     }
 
-    .banner_bgr, .banner_txt, .banner_bgr_apropos {
+    .banner, .banner_apropos, .gallery_logement {
+        background-position: center
+    }
+
+    .banner_bgr, .banner_txt, .banner_bgr_apropos, .gallery_picture {
         width: 100%
     }
 }
@@ -502,6 +511,18 @@
 }
 
 @media (max-width: 800px) {
+    .gallery_arrows_div {
+        top: -147px
+    }
+
+    .gallery_arrows {
+        height: 40px
+    }
+
+    .gallery_numero {
+        top: -7px
+    }
+
     .title_404 {
         font-size: 160px
     }
@@ -541,10 +562,10 @@
         padding: 0
     }
     .link_accueil {
-        margin-right: 5px;
+        margin-right: 5px
     }
     .link_apropos {
-        margin-left: 5px;
+        margin-left: 5px
     }
 
     .banner, .banner_bgr, .banner_txt {
@@ -584,7 +605,7 @@
     }
 
     .titre_apropos {
-        font-size: 13px;
+        font-size: 13px
     }
 
     .titre_nom {
@@ -600,15 +621,41 @@
     }
 
     .texte_apropos, .texte_apropos_open {
-        font-size: 12px;
+        font-size: 12px
     }
 
     .text_content {
         margin: 4px 10px 0 10px
     }
 
+    .gallery_arrows_div {
+        top: -137px
+    }
+
+    .gallery_arrows {
+        height: 20px
+    }
+
     .layout_footer {
-        font-size: 12px;
+        font-size: 12px
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery_numero {
+        top: -27px
+    }
+}
+
+@media (max-width: 460px) {
+    .gallery_numero {
+        top: -47px
+    }
+}
+
+@media (max-width: 390px) {
+    .gallery_numero {
+        top: -67px
     }
 }
 
