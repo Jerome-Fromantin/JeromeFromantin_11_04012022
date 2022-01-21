@@ -17,7 +17,8 @@ Travail réalisé :
 - Mise en place des composants de la page "A propos" (desktop et mobile).
 - Mise en place des transitions de la page "A propos".
 - Transformation des composants << classe >> en composants << fonction >>.
-- Début de mise en place des composants et fonctionnalités de la page "Logement" (desktop).
+- Mise en place des composants et fonctionnalités de la page "Logement" (desktop).
+- Début de mise en place des composants de la page "Logement" (mobile).
 
 Travail à faire :
-- Ajout des composants et fonctionnalités de la page "Logement".
+- Terminer l'adaptation de la page "Logement" à la résolution "mobile".
