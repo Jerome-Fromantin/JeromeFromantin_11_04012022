@@ -54,7 +54,7 @@ class Logement extends React.Component {
                 </div>
             </div>
             <div className="descr_equip">
-                <div>
+                <div className="menu_descr">
                     <div id="titre1" className="titre_descrequip" onClick={this.openClose}>
                         <span className="titre_nom">Description</span>
                         <span className="titre_fleches">
@@ -62,11 +62,11 @@ class Logement extends React.Component {
                             <span className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
                         </span>
                     </div>
-                    <div className="texte_descrequip">
+                    <div id="texte_description" className="texte_descrequip">
                         <p className="text_content_descrequip">{description}</p>
                     </div>
                 </div>
-                <div>
+                <div className="menu_equip">
                     <div id="titre2" className="titre_descrequip" onClick={this.openClose}>
                         <span className="titre_nom">Équipements</span>
                         <span className="titre_fleches">
