@@ -17,8 +17,8 @@ Travail réalisé :
 - Mise en place des composants de la page "A propos" (desktop et mobile).
 - Mise en place des transitions de la page "A propos".
 - Transformation des composants << classe >> en composants << fonction >>.
-- Mise en place des composants et fonctionnalités de la page "Logement" (desktop).
-- Début de mise en place des composants de la page "Logement" (mobile).
+- Mise en place des composants et fonctionnalités de la page "Logement" (desktop et mobile).
+- Début de réorganisation du CSS en plusieurs fichiers.
 
 Travail à faire :
-- Terminer l'adaptation de la page "Logement" à la résolution "mobile".
+- Terminer la réorganisation du CSS.
