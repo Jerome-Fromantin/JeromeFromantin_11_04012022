@@ -1,6 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import {logements} from '../assets/logements'
+import '../styles/styles.css'
+/*import '../styles/home.css'
+import '../styles/media-queries.css'*/
 
 function Home() {
     return (
