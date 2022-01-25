@@ -19,6 +19,7 @@ Travail réalisé :
 - Transformation des composants << classe >> en composants << fonction >>.
 - Mise en place des composants et fonctionnalités de la page "Logement" (desktop et mobile).
 - Début de réorganisation du CSS en plusieurs fichiers.
+- Déploiement du projet sur la page de GitHub.
 
 Travail à faire :
 - Terminer la réorganisation du CSS.
