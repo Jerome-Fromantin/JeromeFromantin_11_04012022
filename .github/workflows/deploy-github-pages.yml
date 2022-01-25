@@ -1,4 +1,4 @@
-name: Déploiement aux pages GitHub
+name: Déploiement vers la page de GitHub
 
 on:
   push:
