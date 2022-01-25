@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/JeromeFromantin_11_04012022/static/css/main.7cfbb54c.css",
+    "main.js": "/JeromeFromantin_11_04012022/static/js/main.f395efd9.js",
+    "static/js/787.43e6aa8b.chunk.js": "/JeromeFromantin_11_04012022/static/js/787.43e6aa8b.chunk.js",
+    "static/media/Banner_Apropos.png": "/JeromeFromantin_11_04012022/static/media/Banner_Apropos.6409af8db1576308fb2b.png",
+    "static/media/Banner_Home.png": "/JeromeFromantin_11_04012022/static/media/Banner_Home.ac3aa7396c2c7cd05e2e.png",
+    "static/media/Banner_Apropos_mobile.png": "/JeromeFromantin_11_04012022/static/media/Banner_Apropos_mobile.ee6d99ddaf5496d8ca7d.png",
+    "index.html": "/JeromeFromantin_11_04012022/index.html",
+    "main.7cfbb54c.css.map": "/JeromeFromantin_11_04012022/static/css/main.7cfbb54c.css.map",
+    "main.f395efd9.js.map": "/JeromeFromantin_11_04012022/static/js/main.f395efd9.js.map",
+    "787.43e6aa8b.chunk.js.map": "/JeromeFromantin_11_04012022/static/js/787.43e6aa8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cfbb54c.css",
+    "static/js/main.f395efd9.js"
+  ]
+}
