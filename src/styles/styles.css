@@ -194,23 +194,23 @@
     background: #FF4040
 }
 
-.titre_nom {
+.titre_nom {            /* Aussi pour le composant "Logement". */
     margin-left: 20px
 }
 
-.titre_fleches {
+.titre_fleches {        /* Aussi pour le composant "Logement". */
     margin-right: 20px
 }
 
-.downarrow_no {
+.downarrow_no {         /* Aussi pour le composant "Logement". */
     display: none
 }
 
-.uparrow {
+.uparrow {              /* Aussi pour le composant "Logement". */
     display: none
 }
 
-.uparrow_yes {
+.uparrow_yes {          /* Aussi pour le composant "Logement". */
     display: block
 }
 
@@ -294,6 +294,10 @@
     text-align: center;
     padding-bottom: 25px;
     margin: 0 auto
+}
+
+.gallery_arrows_div_no {
+    visibility: hidden
 }
 
 .main_infos {
