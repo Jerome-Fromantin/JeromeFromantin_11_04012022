@@ -1,15 +1,43 @@
+//import React, { useState, useEffect } from 'react'
 import React from 'react'
 import {logements} from '../assets/logements'
 import Gallery from '../composants/Gallery'
-import StarScale from '../composants/StarScale';
+import StarScale from '../composants/StarScale'
 import down_arrow from '../assets/DownArrow.png'
 import up_arrow from '../assets/UpArrow.png'
 
 class Logement extends React.Component {
+/*function Logement(props) {*/
     constructor(props) {
         super(props)
         this.state = {logement: {pictures: [], host: {}, tags: [], equipments: []}}
     }
+    /*const [locations, setLocations] = useState([{lieu: {pictures: [], host: {}, tags: [], equipments: []}}])
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch("logements.json")
+            const data = await response.json()
+            console.log(response)
+            console.log(data)
+            setLocations(data)
+        }
+        fetchData()
+    }, [])*/
+    /*state = {
+        locations: []
+    }*/
+
+    /*async fetchData() {
+        const response = await fetch("logements.json")
+        const data = await response.json()
+        console.log(response)
+        console.log(data)
+        //this.setState({lieux: data})
+        const id = this.getLogementId()
+        const lieu = logements.find(item => item.id === id)
+        console.log(lieu)
+        this.setState({lieu})
+    }*/
 
     getLogementId() {
         const url = window.location.href.split("/")
@@ -18,10 +46,36 @@ class Logement extends React.Component {
     }
 
     componentDidMount() {
+        /*fetch("logements.json")
+        .then(response => response.json())
+        .then(datas => {
+            this.setState({logements: datas})
+        })*/
+        /*console.log(this.state)*/
+
+        /*const fetchData = async () => {
+            const response = await fetch("logements.json")
+            const data = await response.json()
+            console.log(response)
+            console.log(data)
+            //this.setState({lieux: data})
+            //const id = this.getLogementId()
+            //const lieu = logements.find(item => item.id === id)
+            //console.log(lieu)
+            this.setState({lieu})
+        }
+        fetchData()*/
+
         const id = this.getLogementId()
         const logement = logements.find(item => item.id === id)
         this.setState({logement})
     }
+
+    /*function getLogement() {*/
+        /*const id = getLogementId()
+        const lieu = locations.find(item => item.id === id)
+        setLocations({lieu})*/
+    /*}*/
 
     openClose(event) {
         let titreTarget = event.currentTarget
@@ -35,7 +89,8 @@ class Logement extends React.Component {
     }
     
     render() {
-        const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement
+        /*const {logements} = this.state*/
+        const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement //useState({lieu})
 
         return (<div>
             {<Gallery photos={pictures}/>}
