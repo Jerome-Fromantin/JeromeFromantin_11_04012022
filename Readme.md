@@ -16,10 +16,10 @@ Travail réalisé :
 - Mise en place des composants de la page 404 (desktop et mobile).
 - Mise en place des composants de la page "A propos" (desktop et mobile).
 - Mise en place des transitions de la page "A propos".
-- Transformation des composants << classe >> en composants << fonction >>.
+- Transformation de certains composants << classe >> en composants << fonction >>.
 - Mise en place des composants et fonctionnalités de la page "Logement" (desktop et mobile).
-- Début de réorganisation du CSS en plusieurs fichiers.
-- Déploiement du projet sur la page de GitHub.
+- Test de déploiement du projet sur la page de GitHub.
+- Récupération partielle des données du JSON.
 
 Travail à faire :
-- Terminer la réorganisation du CSS.
+- Terminer la récupération des données du JSON.
