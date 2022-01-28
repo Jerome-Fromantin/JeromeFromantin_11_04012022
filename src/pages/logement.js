@@ -1,16 +1,18 @@
 //import React, { useState, useEffect } from 'react'
 import React from 'react'
-import {logements} from '../assets/logements'
+//import {logements} from '../assets/logements'
 import Gallery from '../composants/Gallery'
 import StarScale from '../composants/StarScale'
 import down_arrow from '../assets/DownArrow.png'
 import up_arrow from '../assets/UpArrow.png'
+import {getLogement} from '../services/services'
 
 class Logement extends React.Component {
 /*function Logement(props) {*/
     constructor(props) {
         super(props)
         this.state = {logement: {pictures: [], host: {}, tags: [], equipments: []}}
+        this.fetchData = this.fetchData.bind(this)
     }
     /*const [locations, setLocations] = useState([{lieu: {pictures: [], host: {}, tags: [], equipments: []}}])
     useEffect(() => {
@@ -27,17 +29,13 @@ class Logement extends React.Component {
         locations: []
     }*/
 
-    /*async fetchData() {
-        const response = await fetch("logements.json")
-        const data = await response.json()
-        console.log(response)
-        console.log(data)
-        //this.setState({lieux: data})
+    async fetchData() {
         const id = this.getLogementId()
-        const lieu = logements.find(item => item.id === id)
-        console.log(lieu)
-        this.setState({lieu})
-    }*/
+        const logement = await getLogement(id)
+        debugger
+        console.log(logement)
+        this.setState({logement})
+    }
 
     getLogementId() {
         const url = window.location.href.split("/")
@@ -62,13 +60,12 @@ class Logement extends React.Component {
             //const id = this.getLogementId()
             //const lieu = logements.find(item => item.id === id)
             //console.log(lieu)
-            this.setState({lieu})
+            //this.setState({logement})
         }
+        console.log(fetchData)
         fetchData()*/
-
-        const id = this.getLogementId()
-        const logement = logements.find(item => item.id === id)
-        this.setState({logement})
+debugger
+        this.fetchData()
     }
 
     /*function getLogement() {*/
@@ -89,8 +86,9 @@ class Logement extends React.Component {
     }
     
     render() {
-        /*const {logements} = this.state*/
-        const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement //useState({lieu})
+        const {logement} = this.state
+        const {pictures, title, location, host, tags, rating, description, equipments} = logement
+        /*const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement*/
 
         return (<div>
             {<Gallery photos={pictures}/>}

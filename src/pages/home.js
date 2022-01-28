@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import {recup} from '../services/services'
 //import {logements} from '../assets/logements'
 
 function Home(props) {
     const [locations, setLocations] = useState([])
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch("logements.json")
-            const data = await response.json()
-            console.log(response)
-            console.log(data)
+    useEffect(
+        () => {
+        async function fetchData() {
+            const data = await recup();
             setLocations(data)
         }
         fetchData()
