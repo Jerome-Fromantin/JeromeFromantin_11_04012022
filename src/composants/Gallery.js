@@ -30,16 +30,15 @@ class Gallery extends React.Component {
         }
 
         return (<div>
-            {/* S'il y a des images, on affiche celle avec l'index en cours. Sinon, on n'affiche rien (null). */}
+            {/* S'il y a des images, on affiche celle avec l'index en cours. Sinon, on n'affiche rien. */}
             <div className="gallery_logement">
-                <img src={pictures ? pictures[currentPicIndex] : null} alt="Logement" className="gallery_picture"/>
-                
+                {pictures && <img src={pictures[currentPicIndex]} alt="Logement" className="gallery_picture"/>}
             </div>
             {/* S'il y a plusieurs images dans la galerie, la div est affichée avec la classe de base, les flèches
             sont visibles.
             S'il n'y en a qu'une seule, la div prend la deuxième classe qui la met en "visibility: hidden",
             et les flèches sont cachées. */}
-            {pictures.length !== 1 ?
+            {pictures.length > 1 ?
                 <div className="gallery_arrows_div">
                     <img id="previous" src={Previous} alt="Précédent" className="gallery_arrows" onClick={clickPrev}/>
                     <img id="next" src={Next} alt="Suivant" className="gallery_arrows" onClick={clickNext}/>
