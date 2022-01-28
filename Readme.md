@@ -19,7 +19,6 @@ Travail réalisé :
 - Transformation de certains composants << classe >> en composants << fonction >>.
 - Mise en place des composants et fonctionnalités de la page "Logement" (desktop et mobile).
 - Test de déploiement du projet sur la page de GitHub.
-- Récupération partielle des données du JSON.
+- Récupération des données du JSON.
 
-Travail à faire :
-- Terminer la récupération des données du JSON.
+Ce projet est désormais terminé mais peut éventuellement être amélioré.
