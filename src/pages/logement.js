@@ -1,40 +1,15 @@
-//import React, { useState, useEffect } from 'react'
 import React from 'react'
-//import {logements} from '../assets/logements'
+import {getLogement} from '../services/services'
 import Gallery from '../composants/Gallery'
 import StarScale from '../composants/StarScale'
 import down_arrow from '../assets/DownArrow.png'
 import up_arrow from '../assets/UpArrow.png'
-import {getLogement} from '../services/services'
 
 class Logement extends React.Component {
-/*function Logement(props) {*/
     constructor(props) {
         super(props)
         this.state = {logement: {pictures: [], host: {}, tags: [], equipments: []}}
         this.fetchData = this.fetchData.bind(this)
-    }
-    /*const [locations, setLocations] = useState([{lieu: {pictures: [], host: {}, tags: [], equipments: []}}])
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch("logements.json")
-            const data = await response.json()
-            console.log(response)
-            console.log(data)
-            setLocations(data)
-        }
-        fetchData()
-    }, [])*/
-    /*state = {
-        locations: []
-    }*/
-
-    async fetchData() {
-        const id = this.getLogementId()
-        const logement = await getLogement(id)
-        debugger
-        console.log(logement)
-        this.setState({logement})
     }
 
     getLogementId() {
@@ -43,36 +18,15 @@ class Logement extends React.Component {
         return id
     }
 
-    componentDidMount() {
-        /*fetch("logements.json")
-        .then(response => response.json())
-        .then(datas => {
-            this.setState({logements: datas})
-        })*/
-        /*console.log(this.state)*/
-
-        /*const fetchData = async () => {
-            const response = await fetch("logements.json")
-            const data = await response.json()
-            console.log(response)
-            console.log(data)
-            //this.setState({lieux: data})
-            //const id = this.getLogementId()
-            //const lieu = logements.find(item => item.id === id)
-            //console.log(lieu)
-            //this.setState({logement})
-        }
-        console.log(fetchData)
-        fetchData()*/
-debugger
-        this.fetchData()
+    async fetchData() {
+        const id = this.getLogementId()
+        const logement = await getLogement(id)
+        this.setState({logement})
     }
 
-    /*function getLogement() {*/
-        /*const id = getLogementId()
-        const lieu = locations.find(item => item.id === id)
-        setLocations({lieu})*/
-    /*}*/
+    componentDidMount() {
+        this.fetchData()
+    }
 
     openClose(event) {
         let titreTarget = event.currentTarget
@@ -86,9 +40,7 @@ debugger
     }
     
     render() {
-        const {logement} = this.state
-        const {pictures, title, location, host, tags, rating, description, equipments} = logement
-        /*const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement*/
+        const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement
 
         return (<div>
             {<Gallery photos={pictures}/>}

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {recup} from '../services/services'
-//import {logements} from '../assets/logements'
 
 function Home(props) {
     const [locations, setLocations] = useState([])
     useEffect(
         () => {
-        async function fetchData() {
-            const data = await recup();
-            setLocations(data)
-        }
-        fetchData()
-    }, [])
+            async function fetchData() {
+                const data = await recup()
+                setLocations(data)
+            }
+            fetchData()
+        }, []
+    )
 
     return (<div>
         <div className="banner">
