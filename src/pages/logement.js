@@ -1,93 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {getLogement} from '../services/services'
 import Gallery from '../composants/Gallery'
 import StarScale from '../composants/StarScale'
-import down_arrow from '../assets/DownArrow.png'
-import up_arrow from '../assets/UpArrow.png'
+import Collapse from '../composants/Collapse'
+import { useNavigate, useParams } from 'react-router'
 
-class Logement extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {logement: {pictures: [], host: {}, tags: [], equipments: []}}
-        this.fetchData = this.fetchData.bind(this)
-    }
+function Logement(props) {
+    const [logement, setLogement] = useState({pictures: [], host: {}, tags: [], equipments: []})
+    const param = useParams()
+    const navigate = useNavigate()
 
-    getLogementId() {
-        const url = window.location.href.split("/")
-        const id = url[url.length - 1]
-        return id
-    }
+    useEffect(() => {
+        async function fetchData() {
+            const id = param.id
+            const lieu = await getLogement(id)
+            if (!lieu) {
+                navigate("/page404")
+            }
+            else {setLogement(lieu)}
+        }
+        fetchData()
+    }, [navigate, param.id])
 
-    async fetchData() {
-        const id = this.getLogementId()
-        const logement = await getLogement(id)
-        this.setState({logement})
-    }
+    const {pictures, title, location, host, tags, rating, description, equipments} = logement
 
-    componentDidMount() {
-        this.fetchData()
-    }
-
-    openClose(event) {
-        let titreTarget = event.currentTarget
-        let titreId = titreTarget.id
-        let arrow1 = document.querySelector(`#${titreId} .downarrow`)
-        arrow1.classList.toggle("downarrow_no")
-        let arrow2 = document.querySelector(`#${titreId} .uparrow`)
-        arrow2.classList.toggle("uparrow_yes")
-        let text = titreTarget.nextSibling
-        text.classList.toggle("texte_descrequip_open")
-    }
-    
-    render() {
-        const {pictures, title, location, host, tags, rating, description, equipments} = this.state.logement
-
-        return (<div>
-            {<Gallery photos={pictures}/>}
-            <div className="main_infos">
-                <div>
-                    <div className="logement_titre">{title}</div>
-                    <div className="logement_lieu">{location}</div>
-                    <p className="logement_tags">{tags.map((item, id) => (<span className="tag" key={id}>{item}</span>))}</p>
-                </div>
-                <div className="infos_right">
-                    <div className="nom_img">
-                        <div className="propri_nom"><p>{host.name}</p></div>
-                        <div><img src={host.picture} alt="Propriétaire" className="propri_img"/></div>
-                    </div>
-                    <StarScale scaleValue={rating}/>
-                </div>
+    return (<div>
+        {<Gallery photos={pictures}/>}
+        <div className="main_infos">
+            <div>
+                <div className="logement_titre">{title}</div>
+                <div className="logement_lieu">{location}</div>
+                <p className="logement_tags">{tags.map((item, id) => (<span className="tag" key={id}>{item}</span>))}</p>
             </div>
-            <div className="descr_equip">
-                <div className="menu_descr">
-                    <div id="titre1" className="titre_descrequip" onClick={this.openClose}>
-                        <span className="titre_nom">Description</span>
-                        <span className="titre_fleches">
-                            <span className="downarrow"><img src={down_arrow} className="arrowImg" alt="Flèche vers le bas"/></span>
-                            <span className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
-                        </span>
-                    </div>
-                    <div id="texte_description" className="texte_descrequip">
-                        <p className="text_content_descrequip">{description}</p>
-                    </div>
+            <div className="infos_right">
+                <div className="nom_img">
+                    <div className="propri_nom"><p>{host.name}</p></div>
+                    <div><img src={host.picture} alt="Propriétaire" className="propri_img"/></div>
                 </div>
-                <div className="menu_equip">
-                    <div id="titre2" className="titre_descrequip" onClick={this.openClose}>
-                        <span className="titre_nom">Équipements</span>
-                        <span className="titre_fleches">
-                            <span className="downarrow"><img src={down_arrow} className="arrowImg" alt="Flèche vers le bas"/></span>
-                            <span className="uparrow"><img src={up_arrow} className="arrowImg" alt="Flèche vers le haut"/></span>
-                        </span>
-                    </div>
-                    <div className="texte_descrequip">
-                        <ul className="liste_descrequip">
-                            {equipments.map((item, id) => (<li key={id}>{item}</li>))}
-                        </ul>
-                    </div>
-                </div>
+                <StarScale scaleValue={rating}/>
             </div>
-        </div>)
-    }
+        </div>
+        <div className="descr_equip">
+            <div className="menu_descr">
+                <Collapse mobileDisplay="texte_description" title="Description"
+                description={<p className="text_content_descrequip">{description}</p>}
+                titleClass="titre_descrequip" textClass="texte_descrequip"/>
+            </div>
+            <div className="menu_equip">
+                <Collapse title="Équipements"
+                description={<ul className="liste_descrequip">{equipments.map((item, id) => (<li key={id}>{item}</li>))}</ul>}
+                titleClass="titre_descrequip" textClass="texte_descrequip"/>
+            </div>
+        </div>
+    </div>)
 }
 
 export default Logement
