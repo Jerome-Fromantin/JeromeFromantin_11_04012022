@@ -110,7 +110,6 @@
     overflow: hidden;
     width: 340px;
     height: 340px;
-    border: 1px black solid;
     border-radius: 10px;
     margin: 25px
 }
@@ -125,14 +124,12 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: rgba(0, 0, 0, 0.7);
     width: 250px;
     height: 52px;
-    color: #FF6060;
+    color: white;
     font-size: 18px;
     text-align: left;
     padding: 3px 5px;
-    border: 1px #FF6060 solid;
     margin: 0
 }
 
@@ -140,13 +137,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: transparent;
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     width: 340px;
     height: 340px;
     border-radius: 10px
 }
 .card_bgr:hover {
-    background: rgba(0, 0, 0, 0.5)
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%)
 }
 
 /* Règles pour le composant "Apropos". */
@@ -410,7 +407,7 @@
     transition: background 1s, max-height 1s
 }
 
-.texte_descrequip_open {
+.texte_descrequip.texte_apropos_open {
     background: #F7F7F7;
     width: 582px;
     max-height: 250px;
@@ -490,7 +487,7 @@
         width: 49%
     }
 
-    .titre_descrequip, .texte_descrequip, .texte_descrequip_open {
+    .titre_descrequip, .texte_descrequip, .texte_descrequip.texte_apropos_open {
         width: 100%
     }
 }
@@ -749,7 +746,7 @@
         height: 9px
     }
 
-    .texte_apropos, .texte_apropos_open, .texte_descrequip, .texte_descrequip_open {
+    .texte_apropos, .texte_apropos_open, .texte_descrequip, .texte_descrequip.texte_apropos_open {
         font-size: 12px
     }
 
