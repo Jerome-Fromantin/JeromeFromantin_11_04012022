@@ -20,5 +20,8 @@ Travail réalisé :
 - Mise en place des composants et fonctionnalités de la page "Logement" (desktop et mobile).
 - Test de déploiement du projet sur la page de GitHub.
 - Récupération des données du JSON.
+- Amélioration de l'apparence des cartes en pages d'accueil.
+- Installation et utilisation d'un composant "Collapse" dans les 2 pages concernées.
+- Amélioration des routes pour la page 404.
 
 Ce projet est désormais terminé mais peut éventuellement être amélioré.
